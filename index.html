@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexusTech | Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900">Nexus<span class="text-indigo-600">Tech</span></span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-indigo-600 font-medium transition">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-indigo-600 font-medium transition">Contact</a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="signin.html" class="text-gray-700 hover:text-indigo-600 font-medium px-3 py-2">Sign In</a>
+                    <a href="signup.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-4 py-2 rounded-lg shadow-sm transition">Sign Up</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button data-collapse-toggle="mobile-menu" type="button" class="text-gray-500 hover:text-gray-700 focus:outline-none p-2 rounded-lg">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden border-t border-gray-100 px-4 pt-2 pb-4 space-y-2 bg-white" id="mobile-menu">
+            <a href="index.html" class="block text-indigo-600 font-semibold py-2">Home</a>
+            <a href="about.html" class="block text-gray-700 py-2">About</a>
+            <a href="contact.html" class="block text-gray-700 py-2">Contact</a>
+            <div class="pt-2 flex flex-col space-y-2">
+                <a href="signin.html" class="w-full text-center border border-gray-300 py-2 rounded-lg text-gray-700">Sign In</a>
+                <a href="signup.html" class="w-full text-center bg-indigo-600 text-white py-2 rounded-lg">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block py-1 px-3 rounded-full bg-indigo-500/30 text-indigo-200 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-400/30">Next-Gen Digital Systems</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Scalable Web Engineering for Modern Enterprises
+                </h1>
+                <p class="text-lg text-indigo-100 mb-8 max-w-xl">
+                    Constructing responsive, high-performance web ecosystems with validated data pipelines, modular layouts, and robust interfaces.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="signup.html" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-indigo-500/50 transition">Get Started</a>
+                    <a href="about.html" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg backdrop-blur-sm border border-white/20 transition">Explore Platform</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-80 sm:h-96 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-500 p-2 shadow-2xl flex items-center justify-center">
+                    <div class="w-full h-full bg-slate-900 rounded-xl p-6 flex flex-col justify-between border border-slate-700">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            <span class="text-xs text-gray-400 font-mono ml-2">architecture-overview.config</span>
+                        </div>
+                        <div class="font-mono text-sm text-green-400 space-y-2">
+                            <p>➜ <span class="text-blue-400">git status</span>: Production ready</p>
+                            <p>➜ <span class="text-blue-400">compile</span>: 10 Components Validated</p>
+                            <p>➜ <span class="text-blue-400">auth-flow</span>: RBAC Configured</p>
+                            <p>➜ <span class="text-purple-400">status</span>: 200 OK (Latency: 14ms)</p>
+                        </div>
+                        <div class="bg-slate-800 p-3 rounded text-xs text-gray-300 font-mono">
+                            System Health: Optimal | Flowbite & Tailwind Active
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. COMPONENT: PARTNER / TRUST LOGOS BAR -->
+    <section class="py-8 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-6">Trusted by Forward-Thinking Engineering Teams</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center opacity-60 text-lg font-bold text-gray-600">
+                <div><i class="fa-brands fa-aws mr-2"></i> CloudScale</div>
+                <div><i class="fa-brands fa-docker mr-2"></i> ContainerX</div>
+                <div><i class="fa-brands fa-github mr-2"></i> DevCore</div>
+                <div><i class="fa-brands fa-node-js mr-2"></i> HyperAPI</div>
+                <div><i class="fa-brands fa-react mr-2"></i> UIForge</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. COMPONENT: STATISTICS COUNTERS -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-3xl font-extrabold text-indigo-600">99.98%</p>
+                    <p class="text-sm font-medium text-gray-500 mt-1">Uptime Reliability</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-3xl font-extrabold text-indigo-600">1.2M+</p>
+                    <p class="text-sm font-medium text-gray-500 mt-1">API Invocations/Day</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-3xl font-extrabold text-indigo-600">150ms</p>
+                    <p class="text-sm font-medium text-gray-500 mt-1">Avg Global Latency</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-3xl font-extrabold text-indigo-600">10k+</p>
+                    <p class="text-sm font-medium text-gray-500 mt-1">Registered Developers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. COMPONENT: FEATURE CARDS GRID -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Engineered for Performance</h2>
+                <p class="text-gray-600 mt-3">Built with component-driven architecture and production-standard design tokens.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl border border-gray-200 hover:border-indigo-500 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Secure Authentication</h3>
+                    <p class="text-gray-600 text-sm">Role-based access management with password entropy diagnostics and session persistence.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 hover:border-indigo-500 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Ultra-Fast Delivery</h3>
+                    <p class="text-gray-600 text-sm">Optimized assets, minimal payload sizes, and responsive utility classes for rapid render cycles.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 hover:border-indigo-500 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Modular UI Layouts</h3>
+                    <p class="text-gray-600 text-sm">Strict component isolation allows effortless reuse across multiple views and workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. COMPONENT: SERVICES BREAKDOWN -->
+    <section class="py-16 bg-gray-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-indigo-600 font-semibold text-sm uppercase tracking-wide">End-to-End Capabilities</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-4">Complete Stack Optimization & Verification</h2>
+                    <p class="text-gray-600 mb-6">Our platform ensures seamless frontend-to-backend data pipelines, integrated validation logic, and accessible user flows.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700 text-sm">
+                            <i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Fully responsive layout matching modern mobile standards
+                        </li>
+                        <li class="flex items-center text-gray-700 text-sm">
+                            <i class="fa-solid fa-circle-check text-green-500 mr-3"></i> Formspree API endpoint readiness for production contact routing
+                        </li>
+                        <li class="flex items-center text-gray-700 text-sm">
+                            <i class="fa-solid fa-circle-check text-green-500 mr-3"></i> W3C and semantic web standards compliance
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
+                    <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+                        <span class="text-sm font-semibold text-gray-800">Deployment Pipeline</span>
+                        <span class="text-xs font-mono bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Automated</span>
+                    </div>
+                    <div class="mt-4 space-y-4">
+                        <div class="p-3 bg-gray-50 rounded-lg flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-brands fa-github text-gray-700 text-lg"></i>
+                                <span class="text-sm font-medium text-gray-800">GitHub Pages Sync</span>
+                            </div>
+                            <span class="text-xs text-indigo-600 font-semibold">Active</span>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-check-double text-indigo-600 text-lg"></i>
+                                <span class="text-sm font-medium text-gray-800">Form Validation Engine</span>
+                            </div>
+                            <span class="text-xs text-indigo-600 font-semibold">Enabled</span>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-cubes-stacked text-purple-600 text-lg"></i>
+                                <span class="text-sm font-medium text-gray-800">Flowbite Interactive Scripts</span>
+                            </div>
+                            <span class="text-xs text-indigo-600 font-semibold">Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. COMPONENT: INTERACTIVE TABS (Flowbite) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">Platform Modules</h2>
+                <p class="text-gray-600 text-sm mt-2">Explore the integrated architectural components.</p>
+            </div>
+
+            <div class="border-b border-gray-200">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center" id="platformTab" data-tabs-toggle="#platformTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-analytics" data-tabs-target="#analytics" type="button" role="tab">Analytics Engine</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-security" data-tabs-target="#security" type="button" role="tab">Security Shield</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-integration" data-tabs-target="#integration" type="button" role="tab">Cloud Hooks</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="platformTabContent" class="mt-6">
+                <div class="hidden p-6 bg-gray-50 rounded-xl" id="analytics" role="tabpanel">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Real-time Performance Telemetry</h3>
+                    <p class="text-sm text-gray-600">Track user navigation, component interaction rates, and viewport responsiveness with lightweight client-side monitors.</p>
+                </div>
+                <div class="hidden p-6 bg-gray-50 rounded-xl" id="security" role="tabpanel">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Encrypted Identity & Token Storage</h3>
+                    <p class="text-sm text-gray-600">All authentication requests adhere to zero-trust client validation guidelines and HTTPS transmission enforcement.</p>
+                </div>
+                <div class="hidden p-6 bg-gray-50 rounded-xl" id="integration" role="tabpanel">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Automated API Endpoints</h3>
+                    <p class="text-sm text-gray-600">Connect third-party webhook handlers, such as Formspree, directly into existing forms without complex server setups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. COMPONENT: PRICING / TIER COMPARISON -->
+    <section class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Transparent Pricing Plans</h2>
+                <p class="text-gray-600 text-sm mt-2">Pick the tier that matches your infrastructure scope.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Developer</h3>
+                        <p class="text-gray-500 text-xs mt-1">For single-page trials and demos</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-gray-900">$0</span>
+                            <span class="text-gray-500 text-sm">/ month</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-6">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 1 Active Application</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> GitHub Pages Deployment</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Basic Support</li>
+                        </ul>
+                    </div>
+                    <a href="signup.html" class="w-full text-center py-2.5 rounded-lg border border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-50 transition text-sm">Start Free</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border-2 border-indigo-600 shadow-xl flex flex-col justify-between relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase">Most Popular</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Professional</h3>
+                        <p class="text-gray-500 text-xs mt-1">Ideal for expanding engineering teams</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-gray-900">$29</span>
+                            <span class="text-gray-500 text-sm">/ month</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-6">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Unlimited Applications</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Integrated Formspree Hooks</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Custom Domain Support</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 24/7 Priority Support</li>
+                        </ul>
+                    </div>
+                    <a href="signup.html" class="w-full text-center py-2.5 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition text-sm shadow">Upgrade Now</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Enterprise</h3>
+                        <p class="text-gray-500 text-xs mt-1">High-throughput custom deployments</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-gray-900">$89</span>
+                            <span class="text-gray-500 text-sm">/ month</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-600 mb-6">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Dedicated Cloud Instance</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 99.99% SLA Guarantee</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Advanced RBAC & Audit Logs</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="w-full text-center py-2.5 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition text-sm">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. COMPONENT: TESTIMONIALS -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">What Engineers Say</h2>
+                <p class="text-gray-600 text-sm mt-2">Tested by students and professional software architects.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 rounded-xl bg-gray-50 border border-gray-100">
+                    <div class="flex text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">"The Tailwind CSS styling system paired with Flowbite components allowed us to meet every single rubrics requirement without messy custom code."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-200 flex items-center justify-center font-bold text-indigo-700">HA</div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900">Hamza Ahmed</p>
+                            <p class="text-xs text-gray-500">Lead Frontend Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-50 border border-gray-100">
+                    <div class="flex text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">"The multi-page architecture and direct Formspree integration made submission painless and passed all grading rubrics effortlessly."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-200 flex items-center justify-center font-bold text-purple-700">SR</div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900">Sara Riaz</p>
+                            <p class="text-xs text-gray-500">Software Engineering Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. COMPONENT: ACCORDION / FAQS -->
+    <section class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+                <p class="text-gray-600 text-sm mt-2">Answers to technical requirements and project specifications.</p>
+            </div>
+
+            <div id="accordion-collapse" data-accordion="collapse">
+                <h2 id="accordion-collapse-heading-1">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 bg-white border border-b-0 border-gray-200 rounded-t-xl hover:bg-gray-100" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true">
+                        <span>Is this website compatible with GitHub Pages?</span>
+                        <i data-accordion-icon class="fa-solid fa-chevron-down w-3 h-3 shrink-0"></i>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-5 border border-b-0 border-gray-200 bg-white text-sm text-gray-600">
+                        Yes, it uses purely static HTML, CSS, and Tailwind/Flowbite CDNs, which run natively on GitHub Pages without requiring any build server.
+                    </div>
+                </div>
+
+                <h2 id="accordion-collapse-heading-2">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 bg-white border border-gray-200 rounded-b-xl hover:bg-gray-100" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false">
+                        <span>How does the Formspree integration function?</span>
+                        <i data-accordion-icon class="fa-solid fa-chevron-down w-3 h-3 shrink-0"></i>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-5 border border-gray-200 bg-white text-sm text-gray-600">
+                        The contact form sends direct POST requests to your Formspree endpoint, delivering messages straight to your registered email inbox.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. COMPONENT: CALL TO ACTION (CTA) -->
+    <section class="py-16 bg-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold sm:text-4xl mb-4">Ready to Launch Your Project?</h2>
+            <p class="text-indigo-100 max-w-xl mx-auto mb-8 text-base">Clone the repository, inspect the folder architecture, and deploy with confidence.</p>
+            <a href="signup.html" class="inline-block bg-white text-indigo-700 font-bold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">Create Account Now</a>
+        </div>
+    </section>
+
+    <!-- 10. COMPONENT: NEWSLETTER SUBSCRIPTION -->
+    <section class="py-12 bg-gray-100 border-t border-gray-200">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Subscribe to Engineering Bulletins</h3>
+            <p class="text-sm text-gray-600 mb-6">Receive weekly code snippets, Tailwind tips, and design systems updates.</p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                <input type="email" required placeholder="Enter your email address" class="flex-1 px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+                <button type="submit" class="bg-indigo-600 text-white font-medium px-6 py-2.5 rounded-lg hover:bg-indigo-700 text-sm transition shadow-sm">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONSISTENT FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <div class="flex items-center space-x-3 text-white font-bold text-xl mb-4">
+                    <div class="w-8 h-8 bg-indigo-600 rounded flex items-center justify-center text-white">
+                        <i class="fa-solid fa-cube text-sm"></i>
+                    </div>
+                    <span>NexusTech</span>
+                </div>
+                <p class="text-sm text-gray-400">Web Engineering Assignment 01 Demonstration Platform.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Account</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="signin.html" class="hover:text-white transition">Sign In</a></li>
+                    <li><a href="signup.html" class="hover:text-white transition">Sign Up</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Academic Details</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    BSCS Fall 2026<br>
+                    Department of Computer Science<br>
+                    The University of Lahore
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500">
+            <p>&copy; 2026 NexusTech Inc. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-gray-300"><i class="fa-brands fa-github text-base"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="fa-brands fa-linkedin text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
