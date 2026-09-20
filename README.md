@@ -1,5 +1,5 @@
  Web Engineering 
-Multi-page website developed using HTML, CSS, and Tailwind CSS.
+Multi-page website developed using HTML, Tailwind CSS.
 
  Pages:
 - Home (`index.html`)
